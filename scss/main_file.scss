@@ -1,1 +1,69 @@
 @import '_reset';
+body {
+  font-family: Arial, sans-serif;
+  .container {
+    display: grid;
+    grid-template: repeat(3, 231px) / repeat(4, 1fr);
+    grid-row-gap: 40px;
+    width: 890px;
+    margin: 0 auto;
+    margin-top: 30px;
+    div {
+      margin-right: 30px;
+      position: relative;
+      &:hover {
+        background: #EEEEEE;
+        // padding: 12px;
+        border-radius: 12px;
+        .speciality {
+          visibility: visible;
+          background: #EEEEEE;
+        }
+        img {
+          border-radius: 60px;
+
+        }
+}
+      img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+      h2 {
+        text-align: center;
+        color: #2F4F4F;
+        font-size: 20px;
+        margin-top: 8px;
+      }
+      .number {
+        position: absolute;
+        border-radius: 50px;
+        background: rgb(255, 255, 255);
+        color: #8B0000;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        right: -20px;
+        top: 85px;
+      }
+      .speciality {
+        visibility: hidden;
+        color: #000000;
+        text-align: center;
+        font-size: 21.6px;
+        padding: 10px 0 0 20px;
+        margin-right: 0;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  body .container {
+    grid-template: repeat(5, 231px) / repeat(2, 1fr);
+    width: 430px;
+  }
+}

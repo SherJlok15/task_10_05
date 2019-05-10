@@ -41,4 +41,58 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: Arial, sans-serif; }
+  body .container {
+    display: grid;
+    grid-template: repeat(3, 231px)/repeat(4, 1fr);
+    grid-row-gap: 40px;
+    width: 890px;
+    margin: 0 auto;
+    margin-top: 30px; }
+    body .container div {
+      margin-right: 30px;
+      position: relative; }
+      body .container div:hover {
+        background: #EEEEEE;
+        border-radius: 12px; }
+        body .container div:hover .speciality {
+          visibility: visible;
+          background: #EEEEEE; }
+        body .container div:hover img {
+          border-radius: 60px; }
+      body .container div img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px; }
+      body .container div h2 {
+        text-align: center;
+        color: #2F4F4F;
+        font-size: 20px;
+        margin-top: 8px; }
+      body .container div .number {
+        position: absolute;
+        border-radius: 50px;
+        background: white;
+        color: #8B0000;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        right: -20px;
+        top: 85px; }
+      body .container div .speciality {
+        visibility: hidden;
+        color: #000000;
+        text-align: center;
+        font-size: 21.6px;
+        padding: 10px 0 0 20px;
+        margin-right: 0; }
+
+@media (max-width: 999px) {
+  body .container {
+    grid-template: repeat(5, 231px)/repeat(2, 1fr);
+    width: 430px; } }
+
 /*# sourceMappingURL=style.css.map */
